@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private final static int FILECHOOSER_RESULTCODE = 101;
     
     // Live Cloudflare / Server URL
-    private static final String APP_URL = "https://music-plus-stars-until.trycloudflare.com";
+    private static final String APP_URL = "https://conventions-friends-specification-fifteen.trycloudflare.com";
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
