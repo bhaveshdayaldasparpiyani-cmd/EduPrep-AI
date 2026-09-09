@@ -10,6 +10,12 @@ from dotenv import load_dotenv
 ENV_FILE_PATH = os.path.join(os.path.dirname(__file__), ".env")
 load_dotenv(ENV_FILE_PATH, override=True)
 
+try:
+    if "GEMINI_API_KEY" in st.secrets and not os.getenv("GEMINI_API_KEY"):
+        os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
+except Exception:
+    pass
+
 import prompts
 import rag_engine
 import student_manager
